@@ -3,7 +3,7 @@ This is a part of my PhD reserach project on designing DP steel microstructures 
 
 The corresponding research paper has beed published in the International Journal of Plasticity and is available at the following link https://doi.org/10.1016/j.ijplas.2023.103776
 
-The main workflow can can be found as below ![Workflow](https://ars.els-cdn.com/content/image/1-s2.0-S0749641923002607-ga1_lrg.jpg)
+The main workflow can can be found as below [Workflow](https://ars.els-cdn.com/content/image/1-s2.0-S0749641923002607-ga1_lrg.jpg)
 
 Here we present an ML-based approach for the design of DP steel microstructures with specific properties. Our approach is based on a variational autoencoder (VAE) to automatically identify low-dimensional microstructure representations and Bayesian optimization (BOpt) to identify the combination of microstructure descriptors leading to the desired mechanical behavior. For a proof of concept study, we use multi-level Voronoi tessellation in order to speed up the generation of the diverse data set that is required to adequately explore the microstructure parameter space. These microstructures contain information about phase and orientation of each grain. While the use of synthetic microstructures means that the microstructures are simplified, our data contains quantitative features seen in measured DP steel microstructures and the use of an experimentally acquired data set would not change the workflow of the proposed approach. Fig. 1 shows the workflow of the proposed method which consists of the following steps:
 
@@ -14,7 +14,7 @@ Here we present an ML-based approach for the design of DP steel microstructures 
 
 The methods used in this work 1.e, 1) to create DP steel microstructure dataset, 2) architectture of the VAE model and its training procedure, and 3) implementing Bayesian optimization algorithem can be found in the Journla paper.
 
-We have implemented the proposed approach using open source software such as ![Keras](https://keras.io/) and ![Scikit-learn](https://scikit-learn.org/stable/) for Machine learning, ![GPyOpt}(https://sheffieldml.github.io/GPyOpt/) for Bayesian optimization, and ![DAMASK](https://damask.mpie.de/) for Crystal plasticity simulations.
+We have implemented the proposed approach using open source software such as [Keras](https://keras.io/) and [Scikit-learn](https://scikit-learn.org/stable/) for Machine learning, [GPyOpt}(https://sheffieldml.github.io/GPyOpt/) for Bayesian optimization, and [DAMASK](https://damask.mpie.de/) for Crystal plasticity simulations.
 
 Here we share the main code used in the research work. All the code is written in Python and is available in three Jupyter notebooks.
 
