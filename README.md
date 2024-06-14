@@ -22,4 +22,13 @@ Here we share the main code used in the research work. All the code is written i
 2. *VAE_LatentDim_256.ipynb* explains the main architecture and the training procedure for the VAE model.
 3. *BayesianOptimization_16D.ipynb* explains the code to perform Bayesian optimization using the microstructure latent space variables identified by the VAE model.
 
-The trained parts of the VAE model can be found under *VAE256_500Epochs_encoder.hdf5* and *VAE256_500Epochs_decoder.hdf5*, and the necessary configuration files to run the DAMASK simulations can be found in the *config* folder.
+**Data**
+
+1. **Training data**: The DP steel microstructure data used for training the VAE model is available at *DPSteel_Microstructures_15000.zip* 
+
+2. **VAE model**: The trained parts of the VAE model can be found under *VAE256_500Epochs_encoder.hdf5* and *VAE256_500Epochs_decoder.hdf5*, and the necessary configuration files to run the DAMASK simulations can be found in the *config* folder.
+
+3. **DAMASK simulations**: Datasets needed to run Bayesian Optimization code:
+   a) *latinHypercube_VAE256_500Epochs_seed9_3000_property_data_loadRD.zip* contains the mechanical property calculations using DAMASK for the microstrucures from VAE training data (Synthetic microstructures from Voronoi tessellation).
+
+   b) *voronoi_2000_property_data_loadRD.zip* contains the mechanical property calculations using DAMASK for the microstrucures generated from random sampling in the latent sapce and subsequent decoding from VAE decoder
